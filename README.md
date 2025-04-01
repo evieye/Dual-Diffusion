@@ -105,7 +105,7 @@ torchrun --nnodes $WORKER_NUM \
     --nproc_per_node $WORKER_GPU \
     --master_addr $WORKER_0_HOST \
     --master_port $port \
-    train_dual_diffusion_sd3.py  \
+    train_dual_diffusion_sd3_sft.py  \
         --config configs/dual_diff_sft.py \
         --results_dir results/ \
         --model_parallel_size 1 \
